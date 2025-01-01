@@ -1,0 +1,20 @@
+From d243a9763fb85083d148c05cf55c51f4b8866ff0 Mon Sep 17 00:00:00 2001
+From: "snyk-io[bot]" <141718529+snyk-io[bot]@users.noreply.github.com>
+Date: Wed, 1 Jan 2025 01:30:12 +0000
+Subject: [PATCH] fix: test/acceptance/workspaces/pip-app/requirements.txt to
+ reduce vulnerabilities
+
+The following vulnerabilities are fixed by pinning transitive dependencies:
+- https://snyk.io/vuln/SNYK-PYTHON-JINJA2-8548181
+- https://snyk.io/vuln/SNYK-PYTHON-JINJA2-8548987
+---
+ test/acceptance/workspaces/pip-app/requirements.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test/acceptance/workspaces/pip-app/requirements.txt b/test/acceptance/workspaces/pip-app/requirements.txt
+index c3eeef4fb7..7cb100d62d 100644
+--- a/test/acceptance/workspaces/pip-app/requirements.txt
++++ b/test/acceptance/workspaces/pip-app/requirements.txt
+@@ -1 +1 @@
+-Jinja2==2.7.2
++Jinja2==3.1.5
